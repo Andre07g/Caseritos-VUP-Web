@@ -9,3 +9,6 @@ tags: [log]
 
 ## [2026-11-12] arranque | Configuración inicial
 Inspección del proyecto, git init (commit base), corrección de esbuild, install/lint/build OK, extracción de medios de Docs/ a Docs/organizados/, creación de AGENTS.md y wiki.
+
+## [2026-11-13] plan | Plan de mejoras adaptado
+Leída la carpeta "Plan de mejoras"; creado [[plan-de-mejoras]] y lista de preguntas para la dueña (WhatsApp). Sin cambios en el sitio.
