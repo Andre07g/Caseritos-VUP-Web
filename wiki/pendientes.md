@@ -7,7 +7,7 @@ tags: [pendientes]
 ---
 # Pendientes
 ## Datos por confirmar
-- Horario real y enlace real de Instagram.
+- Enlace real de Instagram. Confirmar si el horario 7:00–4:00 aplica de lunes a domingo.
 - Cotejar el menú del sitio (`src/data/menuData.ts`) con los precios del xlsx: **no cotejado todavía**.
 - Precio fijo "$48.000" escrito a mano en `MenuSection.tsx` (~línea 146): verificar.
 - **Testimonios**: los del export (p. ej. María Camila Dangond, Andrés Felipe Murgas) parecen generados por la IA; no hay evidencia en Docs/. No presentarlos como reales sin confirmar. El formulario de reseñas solo guarda en memoria del navegador.
