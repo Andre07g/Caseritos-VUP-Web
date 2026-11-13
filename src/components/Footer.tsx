@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
                 <img
                   src={RESTAURANT_INFO.logo}
                   alt="Logo Caseritos Valledupar"
-                  className="h-8 w-auto object-contain"
+                  className="h-8 w-auto object-contain rounded-md"
                 />
                 <span className="font-serif text-[20px] font-bold text-[#502416]">
                   Caseritos Valledupar

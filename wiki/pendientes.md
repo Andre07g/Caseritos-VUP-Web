@@ -22,3 +22,8 @@ tags: [pendientes]
 
 ## Bloqueos
 - Ninguno.
+
+## Actualización 2026-11-13 (paso 2)
+- Quedan con imagen remota de AI Studio: las 6+ tarjetas de "Lo más pedido" y las del menú. Las 135 fotos reales son casi todas de almuerzos/bowls (y 6 de arroz paisa con papas, 08119–08137); no hay fotos de desayunos, cayeye, arepas ni bebidas aparte del jugo de corozo. Necesito que la dueña diga qué plato es cada uno.
+- Texto del hero "Plato Insignia · Sazón de olla de barro y leña" viene del export: no confirmado.
+- Revisar visualmente en navegador (extensión de Chrome no conectada).

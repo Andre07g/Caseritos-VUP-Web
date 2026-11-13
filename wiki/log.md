@@ -18,3 +18,6 @@ Nuevos: logo PDF, ZIP con 135 fotos de almuerzos (extraído a Docs/organizados/a
 
 ## [2026-11-13] cambio | Horario
 La dueña confirmó horario de 7 a. m. a 4 p. m.; actualizado en src/data/menuData.ts (se muestra en el footer), empresa y pendientes.
+
+## [2026-11-13] cambio | Paso 2 parcial: logo y foto principal
+Logo oficial (de Docs/CASERITOS LOGO.pdf) en public/logo-caseritos.png (Header y Footer). Foto principal: DSC07844 (bowl de pechuga) optimizada a public/fotos/hero-almuerzo.webp (147 KB). Compila; sin revisión visual (navegador no conectado). Reemplazó las imágenes remotas de AI Studio solo en logo y hero.

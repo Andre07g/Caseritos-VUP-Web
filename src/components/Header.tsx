@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
           <img
             src={RESTAURANT_INFO.logo}
             alt="Logo Caseritos Valledupar"
-            className="h-9 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-9 w-auto object-contain rounded-md transition-transform group-hover:scale-105"
           />
           <span className="font-serif text-[21px] font-bold text-[#502416] tracking-tight">
             Caseritos Valledupar

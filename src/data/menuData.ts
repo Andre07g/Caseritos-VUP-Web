@@ -333,8 +333,8 @@ export const RESTAURANT_INFO = {
   address: 'CL 6 C 13 A 60, Valledupar, Cesar',
   instagram: '@caseritosvalledupar',
   hours: 'Lunes a Domingo: 7:00 a.m. - 4:00 p.m.',
-  logo: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA-RCO0tvkB7mFrngY-yIjBpqFp6pwBIN1eH6M-FeFVyTEwgLe4bAAFq9jo16QxjFojPvspWcsYGPzBfdiEy0oJvTI3gWIoohBUrF2CFhm46RO9xU7o9HqlRht3IBLz_mxMusoa3dQJj7TYw4-GZriwepmBPq6sAd_fES7PL2pwbpHmQQs-DFCqSZKb357ogFpHjAiS92ToGdCbxZN_Xbut0zaTZYeFO9nYLBSsA0--2t5QVKJccUoZ',
-  heroImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCUyJWTpLPLgmP9KXYMigeDHfPnOhoWy-jbuOOTYSpsdfug2qE2nNUO1fXTHcUa_ah0ZKGewnapUQl4W4R8ZsaJBK3QslcI0mi3yNiMUgorWhM69WoQalV5zbkL1KZRNQgblUywnTl6xTbonMj2_CF4_xTPc48sO0uExqTAJkVAhBS-73nEewHKHRKLE7BEIybrzaKxRbCkqXDssIfizTpPZ6zgRpsuGaGVYWTjKlxaDQJ466BaWp7T',
+  logo: '/logo-caseritos.png',
+  heroImage: '/fotos/hero-almuerzo.webp',
 };
 
 export function formatPrice(price: number): string {

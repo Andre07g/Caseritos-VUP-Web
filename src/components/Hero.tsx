@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
             <div className="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_40px_rgba(80,36,22,0.15)] border-4 border-white bg-[#ffe9e1] group">
               <img
                 src={RESTAURANT_INFO.heroImage}
-                alt="Desayuno criollo Caseritos Valledupar"
+                alt="Bowl de almuerzo con pechuga, frijol, arroz con fideos y plátano de Caseritos Valledupar"
                 className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
