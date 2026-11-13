@@ -11,7 +11,7 @@ tags: [pendientes]
 - Cotejar el menú del sitio (`src/data/menuData.ts`) con los precios del xlsx: **no cotejado todavía**.
 - Precio fijo "$48.000" escrito a mano en `MenuSection.tsx` (~línea 146): verificar.
 - **Testimonios**: los del export (p. ej. María Camila Dangond, Andrés Felipe Murgas) parecen generados por la IA; no hay evidencia en Docs/. No presentarlos como reales sin confirmar. El formulario de reseñas solo guarda en memoria del navegador.
-- **Fotos del sitio**: usan URLs remotas de Google AI Studio (probablemente generadas, no reales); el logo del sitio también es remoto. Reemplazar por las reales de `Docs/organizados/` (revisión visual pendiente de 30 + 33 imágenes).
+- **Fotos del sitio**: usan URLs remotas de AI Studio (probablemente generadas). Ya hay 135 fotos reales de almuerzos y un logo oficial PDF en Docs/ (ver [[documentos-y-activos]]); falta revisarlas, asociarlas a productos y optimizarlas.
 - Teléfono 573137799512 repetido a mano en `EventQuoteModal.tsx` y `MenuSection.tsx` en vez de usar `RESTAURANT_INFO`.
 - Limpieza técnica: dependencias sin uso (express, dotenv, @google/genai) y README de AI Studio.
 

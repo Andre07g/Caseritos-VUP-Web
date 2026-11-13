@@ -21,3 +21,11 @@ Originales intactos en `Docs/`. Copias de trabajo en `Docs/organizados/` (extra�
 **Duplicados** (sin descartar): varias imágenes coinciden en tamaño entre xlsx y docx (p. ej. 122064, 65467, 235252, 232575, 233697 bytes); probablemente son las mismas fotos.
 **Referencias**: álbumes https://photos.app.goo.gl/B8QFrAnXZjhxCRH16 y https://photos.app.goo.gl/JF5uY6Tmawmcm2iu7 (no abiertos).
 Ver [[empresa]], [[pendientes]].
+
+## Agregado el 2026-11-13
+| Ruta | Categoría | Descripción | Uso en la landing | Pendiente |
+|---|---|---|---|---|
+| `Docs/CASERITOS LOGO.pdf` | Identidad visual | **Logo oficial** (1 página, revisado visualmente): rectángulo naranja, "Caseritos" en amarillo, casa y olla en marrón, "Typical Foods" en blanco. Parece vectorial | Header, Footer, favicon | Confirmar si hay versión PNG/SVG con fondo transparente (el PDF trae fondo naranja) |
+| `Docs/Caseritos Almuerzos 2026-1-001.zip` (239 MB) | Fotos de productos | 135 fotos profesionales (DSC07859…DSC08137, ~3265×4898 px, verticales, ~1–2.5 MB c/u). Copia de trabajo: `Docs/organizados/almuerzos-2026/`. Vistas 2: bowl con pechuga, arroz con fideos, frijol, plátano y ensalada (DSC07859); bowl con plátano maduro y queso rallado (DSC08107). Alta calidad y reales | Hero, populares, menú (almuerzos/bowls) | Revisar visualmente las 133 restantes y asociar cada una a su producto; hay que optimizarlas (pesan demasiado para web) |
+| `Docs/2FOTO DE PRODUCTOS VINAPP OCTUBRE PARA PAGINA WEB.pdf` | Oferta y catálogo | PDF de 14 páginas con el mismo nombre que el xlsx; probablemente es el mismo catálogo | Menú y precios | Sin abrir ni cotejar con el xlsx |
+| `Docs/Sin confirmar 391235.crdownload` (120 MB) | — | **Descarga incompleta** de un zip (no se puede abrir) | — | Pedir que lo vuelva a descargar completo; no se usó |

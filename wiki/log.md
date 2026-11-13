@@ -12,3 +12,6 @@ Inspección del proyecto, git init (commit base), corrección de esbuild, instal
 
 ## [2026-11-13] plan | Plan de mejoras adaptado
 Leída la carpeta "Plan de mejoras"; creado [[plan-de-mejoras]] y lista de preguntas para la dueña (WhatsApp). Sin cambios en el sitio.
+
+## [2026-11-13] docs | Revisión de nuevos archivos en Docs/
+Nuevos: logo PDF, ZIP con 135 fotos de almuerzos (extraído a Docs/organizados/almuerzos-2026), PDF de catálogo, y una descarga .crdownload incompleta. Catálogo actualizado.
