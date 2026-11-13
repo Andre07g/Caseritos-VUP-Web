@@ -34,56 +34,56 @@ export const MENU_CATEGORIES: MenuCategory[] = [
 export const POPULAR_ITEMS: MenuItem[] = [
   {
     id: 'pop-1',
-    name: 'Desayuno con carne desmechada',
-    price: 30000,
-    category: 'pal-desayuno',
-    description: 'Para empezar el día con sabor casero',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCUyJWTpLPLgmP9KXYMigeDHfPnOhoWy-jbuOOTYSpsdfug2qE2nNUO1fXTHcUa_ah0ZKGewnapUQl4W4R8ZsaJBK3QslcI0mi3yNiMUgorWhM69WoQalV5zbkL1KZRNQgblUywnTl6xTbonMj2_CF4_xTPc48sO0uExqTAJkVAhBS-73nEewHKHRKLE7BEIybrzaKxRbCkqXDssIfizTpPZ6zgRpsuGaGVYWTjKlxaDQJ466BaWp7T',
+    name: 'Bowl de pechuga asada',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Trozos de pechuga dorada, vegetales y arroz',
+    image: '/fotos/bowl-pechuga.webp',
     popular: true,
   },
   {
     id: 'pop-2',
-    name: 'Desayuno mixto',
-    price: 36000,
-    category: 'pal-desayuno',
-    description: 'El desayuno más completo de la casa',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_gLPBnVuz8uNxGnQ6AmE5OZQOciMuPf9i8wQIrnGM_juIhdEh23u6EJQMvdIuj1TmHY1H6s0RyAMIn5Wwj0cWf7EwU7nmeHt6lQb7Osc4sPBXbWBC8MAWsGglUO_DeH6cHLGBAfGCvSWki2de3qNgQF3xUf0ZjoxWJgexV-i-FH92DFazxgST-qf7EgPozPRDYDhmrdOcmN9CoEn49pzgNcyD8XGoOpqrZuXFkk75hCpUxKo73aW1',
+    name: 'Bowl de pollo guisado',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Pollo deshebrado en su salsa con arroz blanco',
+    image: '/fotos/bowl-pollo-guisado.webp',
     popular: true,
   },
   {
     id: 'pop-3',
-    name: 'Almuerzo con pollo guisado',
-    price: 30000,
-    category: 'pal-almuerzo',
-    description: 'Sazón tradicional, como en casa',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCkfhD6AEIKsZBtBGlCD9Q3t_c3rwIOicNIXzCPijt66QWk5JclipFMspsovcfBq2gb50II9PGb5LdWP8pE4Gx4NvFGPVOVFinAhw40tWcK7y0LxTim-3SFK6AwfW3eCjajYxbNUoBnZQuKkMaAe3NoNOfDU8HQ_Od-huA_tbPEYQLSFSJCCMVcEd869io3i8NegS2_uuD3b-Q3nzE_VlfE1P2CE-W0KQmD9iKUatMVJQqNETIPnWcx',
+    name: 'Bowl de carne molida',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Base de arroz, fríjoles, carne molida y tajadas',
+    image: '/fotos/bowl-carne-molida.webp',
     popular: true,
   },
   {
     id: 'pop-4',
-    name: 'Bandeja vallenata',
-    price: 48000,
-    category: 'bandeja-vallenata-cat',
-    description: 'Lo mejor de la mesa vallenata en un solo plato',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDf2RSkDz_uJxL8t4El3h_C6knFc8W5wr9faOnfc_oGvf_08iD5DlOUnnIVpdbD3eHQV4KLia8pPtZqHwrIOOgTTrXQOemn_pmz9NaAStO98aqlmSQj3yF2sRSLVZWILCrrQZ8fE7br5Us0V8WizHvTNAr2I09Mk52i9KNRuXhe2IWNEqN5GEEyangO4h8qtFuKXjlJ6FwtKbMios5pqWC2G84MaGutKqx34O0QZnhWtQL2x_o5ggdB',
+    name: 'Bowl de carne desmechada',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Base de arroz, carne desmechada y suero',
+    image: '/fotos/bowl-carne-desmechada.webp',
     popular: true,
   },
   {
     id: 'pop-5',
-    name: 'Arepa rellena',
-    price: 10000,
-    category: 'pa-toa-hora',
-    description: 'Rellena de carne molida o desmechada',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGMdhMraIPRo3eldwv4tUAhsg4UP5VX_GWkNPdFS8Uh0mBOI0Cd_ea2OtgQEfzfEiag-1MOMx9ptLVvf5s-6o3okw9uEggSEhwEEIuq-zZhHWb5p3TXWtwn_rl3nhrOKDXtcZk1yLuj0vOyLLUBXHrCPVzj9Mo9uqJxIGEtWr_U1-AB5VOVzsQW5MI71VzBIXYZa7boOsatvUdi9X002Lc7Kzx9nGtut40NmaXjvYlmFCfO_6MrtQP',
+    name: 'Combo bowl arroz con pollo',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Arroz con pollo desmenuzado, platanitos y ensalada',
+    image: '/fotos/combo-arroz-pollo.webp',
     popular: true,
   },
   {
     id: 'pop-6',
-    name: 'Empanadas',
-    price: 3500,
-    category: 'pa-toa-hora',
-    description: 'De carne o de pollo, ideales a toda hora',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_sy5jjopptVjbap9rQh0ZUD3L_dvpZUzRHfuTdtvmscPtA8JpBRi2_sK05XJE_smpAfw5tUz6B7MYCabckq29JsqwwnSVi2V0sp6YJfzrRVVFIS2KpIDzYgyykaPqWm1U6jwk2Be9dULbkw5mLNX1l3TNJlVujmVDL_VCrWW3uOe1erZJnUCSKeJ4m2cviY1GHbeUS5WK7U2gNu_8Zbz7-gwuzrUsI0uDchrWGYGr22TAVxxpGmDQ',
+    name: 'Combo bowl arroz de cerdo',
+    price: 19900,
+    category: 'bowl-caseritos',
+    description: 'Arroz criollo con cerdo confitado y aguacate',
+    image: '/fotos/combo-arroz-cerdo.webp',
     popular: true,
   },
 ];
@@ -283,46 +283,22 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'faq-1',
     question: '¿Hacen domicilios?',
-    answer: '¡Sí! Llegamos a toda la zona urbana de Valledupar. Los domicilios se despachan inmediatamente en empaques térmicos biodegradables que mantienen tu comida calientita como recién bajada del fogón. El costo varía según el barrio (entre $4.000 y $7.000 COP).',
+    answer: 'Sí, atendemos domicilios en Valledupar. El valor depende de tu ubicación y te lo confirmamos por WhatsApp antes de despachar tu pedido.',
   },
   {
     id: 'faq-2',
     question: '¿Con cuánto tiempo debo pedir para un evento?',
-    answer: 'Para pasabocas y cajas para eventos menores a 50 unidades, sugerimos pedir con al menos 4 a 6 horas de anticipación. Para banquetes grandes o más de 100 porciones, recomendamos confirmar tu pedido con 24 a 48 horas previas para garantizar insumos frescos.',
+    answer: 'Escríbenos por WhatsApp con la fecha, el lugar y la cantidad de personas, y te confirmamos con cuánta anticipación necesitamos tu pedido.',
   },
   {
     id: 'faq-3',
     question: '¿Qué formas de pago aceptan?',
-    answer: 'Aceptamos transferencias directas por Nequi, Daviplata, Bancolombia, pagos contra entrega en efectivo y datáfono para tarjetas de crédito y débito previa solicitud al momento de confirmar el pedido.',
+    answer: 'Te confirmamos las formas de pago por WhatsApp cuando hagas tu pedido.',
   },
   {
     id: 'faq-4',
-    question: '¿Tienen opciones para personas vegetarianas?',
-    answer: 'Contamos con arepas de queso, arepuelas de queso, cayeye tradicional con abundante queso costeño y mantequilla, deditos horneados, patacones con ahogado y porciones de arroz con ensaladas frescas.',
-  },
-];
-
-export const TESTIMONIALS = [
-  {
-    id: 't-1',
-    name: 'María Camila Dangond',
-    city: 'Valledupar, Novalito',
-    rating: 5,
-    comment: '¡El mejor desayuno de Valledupar! La carne desmechada tiene ese sabor auténtico a fogón que uno ya casi no encuentra. Y el suero costeño es una delicia.',
-  },
-  {
-    id: 't-2',
-    name: 'Andrés Felipe Murgas',
-    city: 'Valledupar, Los Cortijos',
-    rating: 5,
-    comment: 'Pedimos la caja de mini deditos y la picada para el cumpleaños de mi papá. Llegó calientito, crocante y a todos los invitados les fascinó. 100% recomendado.',
-  },
-  {
-    id: 't-3',
-    name: 'Silvana Araújo',
-    city: 'Valledupar, San Joaquín',
-    rating: 5,
-    comment: 'La bandeja vallenata y el sancocho de costilla un domingo son sagrados en mi casa. Atención rápida por WhatsApp y comida generosa.',
+    question: '¿Tienen opciones sin carne?',
+    answer: 'En la carta hay arepa de queso, arepuela rellena de queso, cayeye con queso y deditos horneados de queso. Pregúntanos por WhatsApp si necesitas confirmar ingredientes.',
   },
 ];
 
@@ -340,3 +316,17 @@ export const RESTAURANT_INFO = {
 export function formatPrice(price: number): string {
   return `$${price.toLocaleString('es-CO')}`;
 }
+
+export interface MenuMoment {
+  id: string;
+  name: string;
+  categories: string[];
+}
+
+// Agrupa las categorías existentes por momento del día (sin repetir ninguna).
+export const MENU_MOMENTS: MenuMoment[] = [
+  { id: 'desayuno', name: 'Desayunos', categories: ['arma-tu-desayuno', 'pal-desayuno', 'cayeye'] },
+  { id: 'almuerzo', name: 'Almuerzos', categories: ['pal-almuerzo', 'sancocho', 'bandeja-vallenata-cat', 'bowl-caseritos'] },
+  { id: 'antojos', name: 'Antojos', categories: ['pa-toa-hora', 'deditos-horneados', 'picadas'] },
+  { id: 'extras', name: 'Extras y bebidas', categories: ['adicionales', 'bebidas'] },
+];

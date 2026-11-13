@@ -14,3 +14,6 @@ tags: [decisiones]
 | 2026-11-12 | Git local, sin remoto | No hay autorización para subir | instrucciones |
 | 2026-11-13 | Foto principal = DSC07844 (bowl con pechuga, arriba, cenital) — **elección mía, sujeta a aprobación de la dueña** | Foto real y de buena calidad | Docs/Caseritos Almuerzos 2026 |
 | 2026-11-13 | Logo del PDF oficial, con esquinas redondeadas, en Header/Footer | Es el logo oficial; trae fondo naranja | Docs/CASERITOS LOGO.pdf |
+| 2026-11-13 | Instalar 4 skills de GitHub (emilkowalski/skills, pbakaus/impeccable) | Las pide el plan y se indicó hacer todos los pasos sin interrupción | plan-mejoras.md |
+| 2026-11-13 | Catálogo por momento del día (4 grupos sobre las 12 categorías) | Supuesto mío, reversible, **sin aprobación de la dueña** | plan paso 4 |
+| 2026-11-13 | Eliminar reseñas inventadas y reescribir FAQ sin cifras | Regla: no inventar testimonios ni datos | AGENTS.md |

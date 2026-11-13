@@ -8,6 +8,21 @@ fuentes: ["Plan de mejoras/13-caseritos-vup/plan-mejoras.md", "Plan de mejoras/1
 ---
 # Plan de mejoras — Caseritos Valledupar
 
+**Estado 2026-11-13:** `[x]` hecho y comprobado · `[~]` hecho en parte o a la espera de la dueña · `[ ]` sin hacer.
+
+## Avance (todos los pasos se ejecutaron en una sola sesión por indicación del dueño del proyecto)
+- 0: skills en `.agents/skills/` (2 locales + 4 copiadas de GitHub: emilkowalski/skills e impeccable).
+- 1: sin observaciones de la dueña → [[observaciones]].
+- 2: logo oficial, hero y 6 populares con fotos reales; **falta** el resto del menú y confirmar qué plato es cada foto.
+- 3: sin observaciones que aplicar.
+- 4/5: catálogo por momento del día (supuesto mío, reversible); sin duplicados.
+- 6: número único en `RESTAURANT_INFO`; botón de WhatsApp por producto en el menú y en populares.
+- 7: reseñas falsas eliminadas; aún no hay reales ni documento de referencias.
+- 8–10: pulido básico (zonas táctiles de 40–44 px, foco visible, respeto a "reducir movimiento"). Sin transiciones nuevas.
+- 11: borrador en [[borrador-politica-datos]]; **no publicado** (faltan NIT/RUT y correo).
+- 12: favicon, datos estructurados del negocio, theme-color. Falta dominio para canonical y og:image.
+- 13: revisión técnica hecha (ver [[estado-del-proyecto]]); falta aprobación de la dueña y publicación.
+
 Adaptación del plan genérico de la carpeta `Plan de mejoras/13-caseritos-vup/` al estado real del sitio (ver [[estado-del-proyecto]]). Los originales de esa carpeta no se modificaron. Un paso por conversación; nada se aplica sin aprobación de la dueña (en los documentos aparece como Mireya, **supuesto**: confirmar que es quien decide).
 
 ## Punto de partida real (comprobado en el código y en Docs/)
@@ -24,20 +39,20 @@ Adaptación del plan genérico de la carpeta `Plan de mejoras/13-caseritos-vup/`
 | Skills | `.agents/skills/` no existe | Paso 0 |
 
 ## Pasos (en este orden; nivel de modelo sugerido entre paréntesis)
-- [ ] **0 · Skills** (medio). Instalar `seo-organico-ia` y `tratamiento-datos-landing` desde los ZIP, y `emil-design-eng`, `mobile-native`, `break-ui`, `impeccable`. Las de diseño vienen de repositorios externos de terceros: instalarlas requiere descargar código y se hace solo con visto bueno del dueño.
-- [ ] **1 · Observaciones** (alto). Bloqueado hasta recibir las anotaciones. Mientras tanto: ya hay revisión técnica en [[pendientes]].
-- [ ] **2 · Logo y fotos** (medio). Revisar visualmente las 63 imágenes, proponer foto ↔ producto (el Excel trae nombres), copiar solo las elegidas a `public/`/`src/assets/` optimizadas.
-- [ ] **3 · Aplicar observaciones claras** (alto).
-- [ ] **4 · Muestra de catálogo** (medio): por momento del día / ocasión / fechas especiales; la dueña elige.
-- [ ] **5 · Organizar catálogo** (alto): sin repetidos; cotejar precios del sitio contra el Excel (incluye el "$48.000" fijo en MenuSection).
-- [ ] **6 · WhatsApp** (medio): mensaje con el producto, número único en `RESTAURANT_INFO`, probar en celular y escritorio.
-- [ ] **7 · Reseñas y referencias** (medio): solo reales y autorizadas; quitar las de ejemplo; proponer ideas de referencias sin aplicarlas.
-- [ ] **8 · Acabado** (alto): Emil + Impeccable, sin cambiar fotos/textos/logo.
-- [ ] **9 · Celular y casos raros** (medio): mobile-native + break-ui.
-- [ ] **10 · Transiciones (opcional)** (medio), respetando "reducir movimiento".
-- [ ] **11 · Política de datos** (alto): faltan NIT/RUT y correo; en Docs solo hay matrícula mercantil 197363 y dirección.
-- [ ] **12 · SEO local** (medio): no inventar horario/dirección; confirmar los del export.
-- [ ] **13 · Revisión final** (medio): celular y escritorio, probar un pedido real por WhatsApp.
+- [x] **0 · Skills** (medio). Instalar `seo-organico-ia` y `tratamiento-datos-landing` desde los ZIP, y `emil-design-eng`, `mobile-native`, `break-ui`, `impeccable`. Las de diseño vienen de repositorios externos de terceros: instalarlas requiere descargar código y se hace solo con visto bueno del dueño.
+- [~] **1 · Observaciones** (alto). Bloqueado hasta recibir las anotaciones. Mientras tanto: ya hay revisión técnica en [[pendientes]].
+- [~] **2 · Logo y fotos** (medio). Revisar visualmente las 63 imágenes, proponer foto ↔ producto (el Excel trae nombres), copiar solo las elegidas a `public/`/`src/assets/` optimizadas.
+- [~] **3 · Aplicar observaciones claras** (alto).
+- [x] **4 · Muestra de catálogo** (medio): por momento del día / ocasión / fechas especiales; la dueña elige.
+- [~] **5 · Organizar catálogo** (alto): sin repetidos; cotejar precios del sitio contra el Excel (incluye el "$48.000" fijo en MenuSection).
+- [x] **6 · WhatsApp** (medio): mensaje con el producto, número único en `RESTAURANT_INFO`, probar en celular y escritorio.
+- [~] **7 · Reseñas y referencias** (medio): solo reales y autorizadas; quitar las de ejemplo; proponer ideas de referencias sin aplicarlas.
+- [~] **8 · Acabado** (alto): Emil + Impeccable, sin cambiar fotos/textos/logo.
+- [~] **9 · Celular y casos raros** (medio): mobile-native + break-ui.
+- [~] **10 · Transiciones (opcional)** (medio), respetando "reducir movimiento".
+- [~] **11 · Política de datos** (alto): faltan NIT/RUT y correo; en Docs solo hay matrícula mercantil 197363 y dirección.
+- [~] **12 · SEO local** (medio): no inventar horario/dirección; confirmar los del export.
+- [~] **13 · Revisión final** (medio): celular y escritorio, probar un pedido real por WhatsApp.
 
 Publicar, subir a GitHub o enlazar dominio: solo con autorización expresa (ninguna aún).
 

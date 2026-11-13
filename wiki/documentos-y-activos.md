@@ -29,3 +29,17 @@ Ver [[empresa]], [[pendientes]].
 | `Docs/Caseritos Almuerzos 2026-1-001.zip` (239 MB) | Fotos de productos | 135 fotos profesionales (DSC07859…DSC08137, ~3265×4898 px, verticales, ~1–2.5 MB c/u). Copia de trabajo: `Docs/organizados/almuerzos-2026/`. Vistas 2: bowl con pechuga, arroz con fideos, frijol, plátano y ensalada (DSC07859); bowl con plátano maduro y queso rallado (DSC08107). Alta calidad y reales | Hero, populares, menú (almuerzos/bowls) | Revisar visualmente las 133 restantes y asociar cada una a su producto; hay que optimizarlas (pesan demasiado para web) |
 | `Docs/2FOTO DE PRODUCTOS VINAPP OCTUBRE PARA PAGINA WEB.pdf` | Oferta y catálogo | PDF de 14 páginas con el mismo nombre que el xlsx; probablemente es el mismo catálogo | Menú y precios | Sin abrir ni cotejar con el xlsx |
 | `Docs/Sin confirmar 391235.crdownload` (120 MB) | — | **Descarga incompleta** de un zip (no se puede abrir) | — | Pedir que lo vuelva a descargar completo; no se usó |
+
+## Activos publicados en la página (copias en `public/`)
+| Archivo | Origen | Uso |
+|---|---|---|
+| `public/logo-caseritos.png` | `Docs/CASERITOS LOGO.pdf` | Header, footer, favicon |
+| `public/fotos/hero-almuerzo.webp` | `DSC07844.jpg` | Portada |
+| `public/fotos/bowl-pechuga.webp` | `DSC07859.jpg` | Bowl de pechuga asada |
+| `public/fotos/bowl-pollo-guisado.webp` | `DSC07959.jpg` | Bowl de pollo guisado |
+| `public/fotos/bowl-carne-molida.webp` | `DSC07799.jpg` | Bowl de carne molida |
+| `public/fotos/bowl-carne-desmechada.webp` | `DSC07754.jpg` | Bowl de carne desmechada |
+| `public/fotos/combo-arroz-pollo.webp` | `DSC08119.jpg` | Combo bowl arroz con pollo (por confirmar) |
+| `public/fotos/combo-arroz-cerdo.webp` | `DSC08060.jpg` | Combo bowl arroz de cerdo (por confirmar) |
+
+Las 135 fotos de almuerzos se revisaron en hojas de contacto: todas son bowls y almuerzos; 08119–08137 son arroz naranja con papas fritas; hay fotos con una modelo.

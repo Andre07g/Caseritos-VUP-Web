@@ -12,6 +12,8 @@ tags: [caseritos, wiki]
 - [[decisiones]] — decisiones y motivos
 - [[pendientes]] — dudas, bloqueos, próximos cambios
 - [[plan-de-mejoras]] — pasos 0–13 adaptados al estado real (borrador por validar)
+- [[observaciones]] — paso 1 (sin insumo de la dueña)
+- [[borrador-politica-datos]] — borrador no publicado
 - [[log]] — registro cronológico
 
 Reglas del agente: `../AGENTS.md`

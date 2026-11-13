@@ -154,13 +154,13 @@ export const Footer: React.FC = () => {
             <div className="flex gap-6">
               <button
                 onClick={() => scrollTo('preguntas')}
-                className="font-sans text-[13px] text-[#52443f] hover:text-[#502416] transition-colors"
+                className="font-sans text-[13px] text-[#52443f] hover:text-[#502416] transition-colors py-3"
               >
                 Preguntas frecuentes
               </button>
               <button
                 onClick={() => scrollTo('eventos')}
-                className="font-sans text-[13px] text-[#52443f] hover:text-[#502416] transition-colors"
+                className="font-sans text-[13px] text-[#52443f] hover:text-[#502416] transition-colors py-3"
               >
                 Servicio para eventos
               </button>

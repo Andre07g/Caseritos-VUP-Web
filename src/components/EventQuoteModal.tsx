@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EVENT_PACKAGES, formatPrice } from '../data/menuData';
+import { EVENT_PACKAGES, RESTAURANT_INFO, formatPrice } from '../data/menuData';
 
 interface EventQuoteModalProps {
   isOpen: boolean;
@@ -49,7 +49,7 @@ export const EventQuoteModal: React.FC<EventQuoteModalProps> = ({
     message += `\n¿Me pueden confirmar disponibilidad para esta fecha y opciones de entrega? ¡Gracias!`;
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/573137799512?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/${RESTAURANT_INFO.whatsappRaw}?text=${encoded}`, '_blank');
     onClose();
   };
 

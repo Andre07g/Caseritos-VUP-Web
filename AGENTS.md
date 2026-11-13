@@ -13,8 +13,11 @@ Leer este archivo, `wiki/index.md`, `wiki/estado-del-proyecto.md` y las páginas
 - No hay ZIP original en la carpeta: el código ya estaba extraído (ver `wiki/estado-del-proyecto.md`).
 
 ## Comandos comprobados (Node 22, npm 10, Git 2.55)
-- `npm install` · `npm run dev` (puerto 3000) · `npm run lint` (= `tsc --noEmit`) · `npm run build` (Vite → `dist/`). No hay pruebas automáticas.
+- `npm install` · `npm run dev` (puerto 3000) · `npm run lint` (= `tsc --noEmit`) · `npm run build` (Vite → `dist/`). No hay pruebas automáticas; la verificación visual se hace con Edge sin pantalla vía puppeteer-core (instalado fuera del proyecto).
 - `esbuild` se subió a `^0.28.0` en package.json para resolver un conflicto de dependencias con Vite 8.
+
+- Skills del proyecto en `.agents/skills/` (seo-organico-ia, tratamiento-datos-landing, emil-design-eng, mobile-native, break-ui, impeccable).
+- Plan de trabajo: `wiki/plan-de-mejoras.md`; original en `Plan de mejoras/`.
 
 ## Rutina de Docs/
 Cuando el usuario agregue archivos: inventariar, revisar contenido (ver las imágenes), clasificar, copiar a `Docs/organizados/` sin duplicar, actualizar `wiki/documentos-y-activos.md` y extraer datos comprobados a la wiki con referencia al archivo. Al usar una foto en la página, copiar solo ese activo a `public/` o `src/assets/`; no publicar todo Docs/.

@@ -67,14 +67,14 @@ export const Hero: React.FC = () => {
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/92 backdrop-blur-md shadow-lg border border-[#f7ddd3] flex items-center justify-between">
                 <div>
                   <p className="font-sans text-[11px] font-bold uppercase tracking-wider text-[#994700]">
-                    Plato Insignia
+                    Bowl Caseritos
                   </p>
                   <p className="font-serif text-[17px] font-bold text-[#502416]">
-                    Sazón de olla de barro y leña
+                    Pechuga asada, frijol, arroz y plátano
                   </p>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-[#ffe08b] text-[#241a00] font-sans text-[12px] font-bold shadow-xs">
-                  100% Criollo
+                  Comida típica
                 </span>
               </div>
             </div>

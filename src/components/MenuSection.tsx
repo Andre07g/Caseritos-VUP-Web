@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { MENU_CATEGORIES, MENU_ITEMS, formatPrice } from '../data/menuData';
+import { MENU_CATEGORIES, MENU_ITEMS, MENU_MOMENTS, RESTAURANT_INFO, formatPrice } from '../data/menuData';
 import { useCart } from '../context/CartContext';
 
 export const MenuSection: React.FC = () => {
@@ -8,6 +8,10 @@ export const MenuSection: React.FC = () => {
   const { addItem, openCart } = useCart();
 
   const currentCategory = MENU_CATEGORIES.find((c) => c.id === selectedCategory) || MENU_CATEGORIES[0];
+
+  const currentMoment =
+    MENU_MOMENTS.find((m) => m.categories.includes(selectedCategory)) || MENU_MOMENTS[0];
+  const visibleCategories = MENU_CATEGORIES.filter((c) => currentMoment.categories.includes(c.id));
 
   const categoryItems = useMemo(() => {
     if (searchQuery.trim()) {
@@ -27,7 +31,7 @@ export const MenuSection: React.FC = () => {
 
   const getWhatsAppCategoryUrl = (categoryName: string) => {
     const text = encodeURIComponent(`Hola Caseritos Valledupar, quiero hacer un pedido de ${categoryName}`);
-    return `https://wa.me/573137799512?text=${text}`;
+    return `https://wa.me/${RESTAURANT_INFO.whatsappRaw}?text=${text}`;
   };
 
   return (
@@ -68,16 +72,40 @@ export const MenuSection: React.FC = () => {
           </div>
         </div>
 
+        {/* Momento del día */}
+        {!searchQuery && (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4" role="tablist" aria-label="Momento del día">
+            {MENU_MOMENTS.map((m) => {
+              const isActive = m.id === currentMoment.id;
+              return (
+                <button
+                  key={m.id}
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setSelectedCategory(m.categories[0])}
+                  className={`min-h-11 px-3 py-2.5 rounded-xl font-sans text-[14px] font-bold transition-all cursor-pointer ${
+                    isActive
+                      ? 'bg-[#fe852c] text-white shadow-md'
+                      : 'bg-white text-[#502416] border border-[#f7ddd3] hover:bg-[#ffe9e1]'
+                  }`}
+                >
+                  {m.name}
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         {/* Categories Pills Horizontal Scroll */}
         {!searchQuery && (
           <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none">
-            {MENU_CATEGORIES.map((cat) => {
+            {visibleCategories.map((cat) => {
               const isActive = cat.id === selectedCategory;
               return (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-4 py-2.5 rounded-full font-sans text-[13px] sm:text-[14px] font-semibold whitespace-nowrap transition-all cursor-pointer ${
+                  className={`min-h-11 px-4 py-2.5 rounded-full font-sans text-[13px] sm:text-[14px] font-semibold whitespace-nowrap transition-all cursor-pointer ${
                     isActive
                       ? 'bg-[#502416] text-white shadow-md'
                       : 'bg-[#ffe9e1] text-[#261813] hover:bg-[#fde3d9]'
@@ -224,9 +252,22 @@ export const MenuSection: React.FC = () => {
                           {formatPrice(item.price)}
                         </span>
 
+                        <a
+                          href={`https://wa.me/${RESTAURANT_INFO.whatsappRaw}?text=${encodeURIComponent(
+                            `Hola Caseritos Valledupar, quiero pedir: ${item.name} (${formatPrice(item.price)})`
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 rounded-full bg-white border border-[#f7ddd3] hover:bg-[#ffe9e1] text-[#994700] flex items-center justify-center transition-colors"
+                          title="Preguntar por WhatsApp"
+                          aria-label={`Pedir ${item.name} por WhatsApp`}
+                        >
+                          <span className="material-symbols-outlined text-[18px]">chat</span>
+                        </a>
+
                         <button
                           onClick={() => handleQuickAdd(item)}
-                          className="w-8 h-8 rounded-full bg-[#ffe9e1] hover:bg-[#fe852c] text-[#502416] hover:text-white flex items-center justify-center transition-colors shadow-xs active:scale-90"
+                          className="w-10 h-10 rounded-full bg-[#ffe9e1] hover:bg-[#fe852c] text-[#502416] hover:text-white flex items-center justify-center transition-colors shadow-xs active:scale-90"
                           title="Agregar al pedido"
                           aria-label={`Agregar ${item.name}`}
                         >
@@ -244,7 +285,7 @@ export const MenuSection: React.FC = () => {
           <div className="pt-6 border-t border-[#ffe9e1] flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs sm:text-sm text-[#52443f] flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              Preparados frescos al momento • Domicilios rápidos en Valledupar
+              Domicilios en Valledupar • Pedidos por WhatsApp
             </span>
 
             <a

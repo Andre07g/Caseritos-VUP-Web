@@ -27,3 +27,15 @@ tags: [pendientes]
 - Quedan con imagen remota de AI Studio: las 6+ tarjetas de "Lo más pedido" y las del menú. Las 135 fotos reales son casi todas de almuerzos/bowls (y 6 de arroz paisa con papas, 08119–08137); no hay fotos de desayunos, cayeye, arepas ni bebidas aparte del jugo de corozo. Necesito que la dueña diga qué plato es cada uno.
 - Texto del hero "Plato Insignia · Sazón de olla de barro y leña" viene del export: no confirmado.
 - Revisar visualmente en navegador (extensión de Chrome no conectada).
+
+## Actualización 2026-11-13 (plan completo)
+- **Aprobar con la dueña**: foto del hero (DSC07844); asignación foto→plato de los 6 populares: bowl de pechuga (07859), pollo guisado (07959), carne molida (07799), carne desmechada (07754) y dos "combo bowl" (08119 arroz con pollo, 08060 arroz de cerdo; **estos dos son los más dudosos**, asignados por apariencia). También el catálogo por momentos del día.
+- Confirmar si el horario 7:00–4:00 es de lunes a domingo (el JSON-LD usa Mo-Su).
+- Testimonios falsos eliminados del código (siguen en el historial de Git, commit `714c134`). Faltan reseñas reales con autorización.
+- FAQ reescrita sin cifras: confirmar costo de domicilio, formas de pago y anticipación para eventos.
+- Textos del export sin confirmar: "Directo al fogón casero", "Tradición & Fogón Vallenato", texto de Nosotros (abuelas cesarenses, maíz seleccionado), "Banquete criollo" en eventos.
+- Datos legales para la política (NIT/RUT, correo). Dominio para canonical y og:image.
+- No hay fotos de desayunos, cayeye, arepas ni sancocho en Docs/.
+- Instagram del footer apunta a instagram.com genérico.
+- Hay fotos con una modelo: confirmar consentimiento de imagen antes de usarlas.
+- Skills de GitHub copiadas desde repos de terceros (sin ejecutar scripts).

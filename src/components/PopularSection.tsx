@@ -1,5 +1,5 @@
 import React from 'react';
-import { POPULAR_ITEMS, formatPrice } from '../data/menuData';
+import { POPULAR_ITEMS, RESTAURANT_INFO, formatPrice } from '../data/menuData';
 import { useCart } from '../context/CartContext';
 
 export const PopularSection: React.FC = () => {
@@ -10,24 +10,7 @@ export const PopularSection: React.FC = () => {
     openCart();
   };
 
-  const getButtonLabel = (id: string) => {
-    switch (id) {
-      case 'pop-1':
-        return 'Pedir desayuno';
-      case 'pop-2':
-        return 'Pedir desayuno mixto';
-      case 'pop-3':
-        return 'Pedir almuerzo';
-      case 'pop-4':
-        return 'Pedir bandeja vallenata';
-      case 'pop-5':
-        return 'Pedir arepa rellena';
-      case 'pop-6':
-        return 'Pedir empanadas';
-      default:
-        return 'Pedir ahora';
-    }
-  };
+  const getButtonLabel = (_id: string) => 'Pedir ahora';
 
   return (
     <section className="py-16 sm:py-20 bg-[#fff8f6]" id="lo-mas-pedido">
@@ -90,7 +73,7 @@ export const PopularSection: React.FC = () => {
                   </button>
 
                   <a
-                    href={`https://wa.me/573137799512?text=Hola,%20quiero%20hacer%20el%20pedido:%20${encodeURIComponent(
+                    href={`https://wa.me/${RESTAURANT_INFO.whatsappRaw}?text=Hola,%20quiero%20hacer%20el%20pedido:%20${encodeURIComponent(
                       dish.name
                     )}%20(${formatPrice(dish.price)})`}
                     target="_blank"
