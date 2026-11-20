@@ -39,3 +39,8 @@ tags: [pendientes]
 - Instagram del footer apunta a instagram.com genérico.
 - Hay fotos con una modelo: confirmar consentimiento de imagen antes de usarlas.
 - Skills de GitHub copiadas desde repos de terceros (sin ejecutar scripts).
+
+## Encuesta de satisfacción (2026-11-20)
+- Definir el correo que recibirá las respuestas (hoy `CAMBIAR@CORREO.COM`).
+- La URL del QR necesita el sitio publicado (dominio). Con `?para=` el correo puede cambiar sin tocar el código, pero el QR impreso debe regenerarse.
+- Opcional, con autorización y posible costo: servicio externo de formularios para que la respuesta llegue sola, sin abrir el correo del cliente.

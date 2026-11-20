@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#502416" />
+  <meta name="robots" content="noindex" />
+  <title>Tu opinión | Caseritos Valledupar</title>
+  <link rel="icon" type="image/png" href="/logo-caseritos.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #502416; --primary-container: #6b3a2a;
+      --secondary: #994700; --secondary-container: #fe852c;
+      --tertiary-fixed-dim: #f1c100; --tertiary-fixed: #ffe08b;
+      --surface: #fff8f6; --surface-low: #fff1ec; --surface-high: #fde3d9;
+      --on-surface: #261813; --on-surface-variant: #52443f;
+      --outline: #85736e; --outline-variant: #d7c2bc;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface); color: var(--on-surface);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif; line-height: 1.5;
+      -webkit-tap-highlight-color: transparent; }
+    h1, h2 { font-family: "Playfair Display", Georgia, serif; margin: 0; }
+    header { background: var(--primary); color: #fff; text-align: center;
+      padding: calc(24px + env(safe-area-inset-top)) 16px 28px; }
+    header img { width: 72px; height: 72px; border-radius: 6px; display: block; margin: 0 auto 12px; }
+    header h1 { font-size: 1.75rem; line-height: 1.2; }
+    header p { margin: 6px 0 0; color: #eaa690; font-size: .95rem; }
+    main { max-width: 560px; margin: 0 auto; padding: 20px 16px calc(40px + env(safe-area-inset-bottom)); }
+    fieldset { border: 0; padding: 0; margin: 0 0 20px; }
+    .card { background: #fff; border: 1px solid var(--outline-variant); border-radius: 16px; padding: 16px; margin-bottom: 14px; }
+    legend, label.q { font-weight: 700; font-size: 1rem; padding: 0; margin-bottom: 8px; display: block; }
+    .hint { color: var(--on-surface-variant); font-size: .85rem; font-weight: 400; }
+    .stars { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: 4px; }
+    .stars input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .stars label { font-size: 2.4rem; line-height: 1; cursor: pointer; color: var(--outline-variant);
+      min-width: 48px; min-height: 48px; display: grid; place-items: center; transition: color .15s, transform .15s; }
+    .stars label:hover, .stars label:hover ~ label,
+    .stars input:checked ~ label { color: var(--tertiary-fixed-dim); }
+    .stars label:active { transform: scale(.92); }
+    .stars input:focus-visible + label { outline: 3px solid var(--secondary-container); outline-offset: 2px; border-radius: 8px; }
+    .choices { display: flex; gap: 8px; flex-wrap: wrap; }
+    .choices input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .choices label { border: 1.5px solid var(--outline-variant); background: var(--surface-low); border-radius: 999px;
+      padding: 10px 18px; min-height: 44px; cursor: pointer; font-weight: 600; display: grid; place-items: center; }
+    .choices input:checked + label { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .choices input:focus-visible + label { outline: 3px solid var(--secondary-container); outline-offset: 2px; }
+    input[type=text], input[type=email], textarea { width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; min-height: 46px;
+      border: 1.5px solid var(--outline-variant); border-radius: 12px; background: #fff; color: var(--on-surface); }
+    textarea { min-height: 110px; resize: vertical; }
+    input:focus, textarea:focus { outline: 3px solid var(--secondary-container); outline-offset: 1px; border-color: var(--secondary); }
+    .row { display: grid; gap: 12px; }
+    button[type=submit] { width: 100%; min-height: 52px; border: 0; border-radius: 999px; background: var(--secondary-container);
+      color: #321300; font: inherit; font-weight: 700; font-size: 1.05rem; cursor: pointer; transition: transform .15s; }
+    button[type=submit]:active { transform: scale(.98); }
+    button[type=submit]:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+    .note { color: var(--on-surface-variant); font-size: .8rem; margin: 14px 4px 0; }
+    .error { color: #ba1a1a; font-size: .9rem; font-weight: 600; margin: 0 0 12px; min-height: 1.2em; }
+    .thanks { text-align: center; display: none; padding: 40px 8px; }
+    .thanks h2 { font-size: 1.7rem; color: var(--primary); margin-bottom: 8px; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/logo-caseritos.png" alt="Caseritos Typical Foods" />
+    <h1>¿Cómo te fue hoy?</h1>
+    <p>Tu opinión nos ayuda a mejorar. Toma menos de un minuto.</p>
+  </header>
+
+  <main>
+    <form id="encuesta" novalidate>
+      <div class="card">
+        <fieldset>
+          <legend>La comida</legend>
+          <div class="stars" data-name="comida"></div>
+        </fieldset>
+        <fieldset>
+          <legend>La atención</legend>
+          <div class="stars" data-name="atencion"></div>
+        </fieldset>
+        <fieldset>
+          <legend>La rapidez del servicio</legend>
+          <div class="stars" data-name="rapidez"></div>
+        </fieldset>
+        <fieldset style="margin:0">
+          <legend>El ambiente y la limpieza</legend>
+          <div class="stars" data-name="ambiente"></div>
+        </fieldset>
+      </div>
+
+      <div class="card">
+        <fieldset style="margin:0">
+          <legend>¿Nos recomendarías?</legend>
+          <div class="choices">
+            <input type="radio" id="rec-si" name="recomienda" value="Sí" /><label for="rec-si">Sí</label>
+            <input type="radio" id="rec-tal" name="recomienda" value="Tal vez" /><label for="rec-tal">Tal vez</label>
+            <input type="radio" id="rec-no" name="recomienda" value="No" /><label for="rec-no">No</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="card">
+        <label class="q" for="comentario">¿Qué podemos mejorar? <span class="hint">(opcional)</span></label>
+        <textarea id="comentario" name="comentario" maxlength="800" placeholder="Cuéntanos con confianza"></textarea>
+      </div>
+
+      <div class="card row">
+        <div>
+          <label class="q" for="nombre">Tu nombre <span class="hint">(opcional)</span></label>
+          <input type="text" id="nombre" name="nombre" autocomplete="given-name" maxlength="80" />
+        </div>
+        <div>
+          <label class="q" for="contacto">Teléfono o correo <span class="hint">(opcional, solo si quieres que te respondamos)</span></label>
+          <input type="text" id="contacto" name="contacto" autocomplete="off" maxlength="120" />
+        </div>
+      </div>
+
+      <p class="error" id="error" role="alert"></p>
+      <button type="submit">Enviar mi opinión</button>
+      <p class="note">Al enviar se abrirá tu aplicación de correo con tu opinión lista para mandar a Caseritos. Solo usamos tus datos para responderte y mejorar el servicio.</p>
+    </form>
+
+    <section class="thanks" id="gracias" aria-live="polite">
+      <h2>¡Gracias por tu opinión!</h2>
+      <p>Si tu correo no se abrió, revisa que tengas una aplicación de correo configurada. Te esperamos pronto en Caseritos.</p>
+    </section>
+  </main>
+
+  <script>
+    // ============ CONFIGURACIÓN ============
+    // Correo que recibe las respuestas. Se puede cambiar aquí o con ?para=correo@ejemplo.com en el enlace del QR.
+    var CORREO_DESTINO = 'CAMBIAR@CORREO.COM';
+    // =======================================
+    var params = new URLSearchParams(location.search);
+    var para = params.get('para') || CORREO_DESTINO;
+    var mesa = (params.get('mesa') || '').slice(0, 20);
+    var preguntas = { comida: 'Comida', atencion: 'Atención', rapidez: 'Rapidez', ambiente: 'Ambiente y limpieza' };
+
+    document.querySelectorAll('.stars').forEach(function (box) {
+      var n = box.dataset.name, html = '';
+      for (var i = 5; i >= 1; i--) {
+        html += '<input type="radio" id="' + n + i + '" name="' + n + '" value="' + i + '"><label for="' + n + i + '" title="' + i + ' de 5" aria-label="' + i + ' de 5">★</label>';
+      }
+      box.innerHTML = html;
+    });
+
+    document.getElementById('encuesta').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target, err = document.getElementById('error'), lineas = [], faltan = [];
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(para)) { err.textContent = 'Este formulario aún no tiene un correo de destino. Avisa al personal.'; return; }
+      Object.keys(preguntas).forEach(function (k) {
+        var v = f.querySelector('input[name=' + k + ']:checked');
+        if (!v) faltan.push(preguntas[k].toLowerCase()); else lineas.push(preguntas[k] + ': ' + v.value + ' de 5');
+      });
+      if (faltan.length) { err.textContent = 'Falta calificar: ' + faltan.join(', ') + '.'; return; }
+      err.textContent = '';
+      var rec = f.querySelector('input[name=recomienda]:checked');
+      if (rec) lineas.push('¿Nos recomendaría?: ' + rec.value);
+      if (mesa) lineas.push('Mesa: ' + mesa);
+      if (f.comentario.value.trim()) lineas.push('Comentario: ' + f.comentario.value.trim());
+      if (f.nombre.value.trim()) lineas.push('Nombre: ' + f.nombre.value.trim());
+      if (f.contacto.value.trim()) lineas.push('Contacto: ' + f.contacto.value.trim());
+      var asunto = 'Encuesta de satisfacción - Caseritos' + (mesa ? ' (mesa ' + mesa + ')' : '');
+      var cuerpo = lineas.join('\n') + '\n\nEnviado desde la encuesta de la mesa.';
+      f.hidden = true;
+      document.getElementById('gracias').style.display = 'block';
+      window.scrollTo(0, 0);
+      location.href = 'mailto:' + encodeURIComponent(para).replace('%40', '@') + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+    });
+  </script>
+</body>
+</html>

@@ -24,3 +24,6 @@ Logo oficial (de Docs/CASERITOS LOGO.pdf) en public/logo-caseritos.png (Header y
 
 ## [2026-11-13] plan | Ejecución de los pasos 0–13
 Skills instaladas; 6 populares con fotos reales (public/fotos); menú por momento del día; WhatsApp por producto y número único; reseñas falsas eliminadas; FAQ sin datos inventados; SEO básico (favicon, JSON-LD); accesibilidad; borrador de política de datos (no publicado); revisión visual y funcional con Edge sin pantalla. Sin publicar ni subir a GitHub.
+
+## 2026-11-20 — Encuesta de satisfacción con QR
+- Nuevo `public/encuesta.html` (mismo estilo, logo y colores) y `herramientas/generar-qr.mjs` (tarjeta imprimible con QR). Envío por `mailto:` (abre el correo del cliente); destino configurable con `CORREO_DESTINO` o `?para=` en el enlace. Revisado visualmente en móvil; el abrir del correo no se probó en un celular real. Nada publicado.
